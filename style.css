@@ -1,0 +1,240 @@
+/* EDIÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Edição na barra do topo*/
+.menu-desktop {
+    background-color: rgb(170, 244, 247);
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+/*Edições no estilo dos botões do menu*/
+.menu-desktop ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-desktop ul li {
+    margin: 0 10px;
+}
+
+/*Estilo dos botões e link*/
+.menu-desktop ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: inline-block;
+    min-width: 120px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    border-radius: 20px;
+}
+
+/* Efeitos de Hover adicionados */
+.menu-desktop ul li a:hover {
+    background-color: #3498db;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu-desktop ul li a:active {
+    transform: scale(0.95);
+}
+
+/*Efeitos no Corpo e imagem pagina inicial*/
+body {
+    background-color: rgb(203, 239, 255);
+    height: 100vh;
+    overflow-x: hidden; /
+}
+
+.interface {
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+/*Estilo Header*/
+header > .interface {
+    display: flex;
+    align-items: center;
+}
+
+header a {
+    color: rgb(0, 97, 100);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header a:hover {
+    color: black;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 100px;
+}
+
+/*ESTILO DO TOPO*/
+section.topo-do-site {
+    padding: 100px 4%;
+    text-align: center;
+}
+
+/* ESTILO DA APRESENTAÇÃO*/
+.apresentacao .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo da imagem */
+.apresentacao .img-apresentacao img {
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
+    border: 3px solid #3498db;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Ajusta o texto */
+.apresentacao .txt-apresentacao {
+    max-width: 400px;
+    text-align: left;
+}
+
+/* ESTILO DA ABA CONTATO*/
+
+section.formulario {
+    padding: 80px 4%;
+    text-align: center;
+}
+
+form {
+    width: 100%; 
+    max-width: 500px; 
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background-color: #3498db2f;
+    border: 1;
+    outline: 0;
+    padding: 15px 15px;
+    border-radius: 15px;
+    font-size: 18px;
+    color: #000000;
+}
+
+form textarea {
+    resize: none;
+}
+
+form .botaoenviar {
+    text-align: center;
+}
+
+form .botaoenviar input {
+    cursor: pointer;
+    width: 120px;
+    background-color: rgb(170, 244, 247);
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+form .botaoenviar input:hover {
+    background-color: #3498db;
+    color: rgb(255, 255, 255);
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.95s;
+}
+
+/*ESTILO DO PORTIFOLIO/PROJETOS*/
+
+.portifolio h2 {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+section.portifolio {
+    padding: 80px 4%;  
+}
+
+.imgport {
+    width: 360px;
+    height: 460px;
+    background-color: rgb(170, 244, 247);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: left top; 
+    transition: transform 0.3s ease, filter 0.3s ease; 
+    cursor: pointer;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+section.portifolio .flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+}
+
+.imgport:hover {
+    filter: brightness(0.4); 
+    transform: scale(1.05); 
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff; 
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    padding: 0 10px; 
+}
+
+.imgport:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: #fff; 
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); 
+    font-size: 26px; 
+}
